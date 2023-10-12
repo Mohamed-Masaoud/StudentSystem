@@ -8,6 +8,15 @@ namespace StudentSystem.App.Data
 {
     public class Homework
     {
+        public Homework(int id, ContentType contentType, DateTime submissionDate, int courseId, int studentId)
+        {
+            Id = id;
+            ContentType = contentType;
+            SubmissionDate = submissionDate;
+            CourseId = courseId;
+            StudentId = studentId;
+        }
+
         public int Id { get; set; }
         public ContentType ContentType { get; set; }
         public DateTime SubmissionDate { get; set; }

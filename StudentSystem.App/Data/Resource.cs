@@ -8,6 +8,15 @@ namespace StudentSystem.App.Data
 {
     public class Resource
     {
+        public Resource(int id, string name, ResourceType typeOfResource, string uRL, int courseId)
+        {
+            Id = id;
+            Name = name;
+            TypeOfResource = typeOfResource;
+            URL = uRL;
+            CourseId = courseId;
+        }
+
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public ResourceType TypeOfResource { get; set; }

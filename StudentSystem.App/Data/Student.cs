@@ -29,8 +29,8 @@ namespace StudentSystem.App.Data
         public DateTime RegisteredOn  { get; set; }
         public DateTime? BirthDate { get;  set; }
 
-        public List<StudentCourse> StudentCourses { get; set; }
-        public List <Homework> homeworks { get; set; }
+        public List<StudentCourse> StudentCourses { get; set; } = null!;
+        public List<Homework> homeworks { get; set; } = null!;
 
 
     }
