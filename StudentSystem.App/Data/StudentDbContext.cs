@@ -70,7 +70,8 @@ namespace StudentSystem.App.Data
 
             modelBuilder.Entity<Student>().HasData
                 (
-                    new Student
+                    new Student(),
+                    new Student()
                 );
 
         }
