@@ -4,6 +4,7 @@ using StudentSystem.App.Data;
 var db = new StudentDbContext();
 
 // 1.	Lists all students and their homework submissions. Display only their names and for each homework - content and content-type.
+// Query one-to-many
 var studentsWithHomework = db.Students
     .Select(x =>
         new
@@ -102,7 +103,7 @@ Console.WriteLine("\n-------------------------\n");
 
 // 4.	For each student, calculate the number of courses they have enrolled in, the total price of these courses and the average price per course for the student.
 // Print the student name, number of courses, total price and average price. Order the results by total price (descending), then by number of courses (descending) and then by the student's name (ascending).
-
+// query many-to-many
 var StudentCourses = db.Students
     .Select(c =>
         new
