@@ -27,7 +27,7 @@ namespace StudentSystem.App.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlite($"data source: {DbPath}");
+            optionsBuilder.UseSqlite($"data source= {DbPath}");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
